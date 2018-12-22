@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'DejaVu Serif';
+    src: url('../fonts/DejaVuSerif.woff2') format('woff2'),
+        url('../fonts/DejaVuSerif.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import "normalize";
+@import "layout";
+@import "elements";
+
+body{
+	background-color: #000;
+	font-family: 'DejaVu Serif', Arial, sans-serif;
+	color: #000;
+	font-size: 55px;
+}
+.ba-hide{
+	display: none;
+}
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1346px;
+}
+.ba-card-list{
+	display: flex;
+    flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 50px 0;
+}
+.ba-card{
+	display: flex;
+	background-color: #fff;
+	width: 317.5px;
+	height: 444.5px;
+	border-radius: 30px;
+}
+.ba-left,
+.ba-right{
+	width: 12.5%;
+	height: 100%;
+}
+.ba-center{
+	width: 75%;
+	height: 100%;
+}
+.icon{
+	height: 64px;
+	width: 64px;
+}
+.ba-column{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+}
+.ba-center-row{
+	display: flex;
+	justify-content: center;
+	height: 100%;
+}
+.ba-number-suit{
+	font-size: 0;
+	.icon{
+		height: 32px;
+		width: 32px;
+	}
+}

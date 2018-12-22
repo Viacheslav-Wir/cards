@@ -1,0 +1,41 @@
+[
+  {
+    "jsonImg": [
+                  {
+                    "spades": "<svg class='icon icon-spades'><use xlink:href='#icon-spades'></use></svg>",
+                    "clubs": "<svg class='icon icon-clubs'><use xlink:href='#icon-clubs'></use></svg>",
+                    "diamonds": "<svg class='icon icon-diamonds'><use xlink:href='#icon-diamonds'></use></svg>",
+                    "heart": "<svg class='icon icon-heart'><use xlink:href='#icon-heart'></use></svg>"
+                  }
+                ],
+   "jsonData": [
+                  {
+                    "6": "six-tmpl"
+                  },
+                  {
+                    "7": "seven-tmpl"
+                  },
+                  {
+                    "8": "eight-tmpl"
+                  },
+                  {
+                    "9": "nine-tmpl"
+                  },
+                  {
+                    "10": "ten-tmpl"
+                  },
+                  {
+                    "j": "jack-tmpl"
+                  },
+                  {
+                    "q": "quin-tmpl"
+                  },
+                  {
+                    "k": "king-tmpl"
+                  },
+                  {
+                    "a": "ace-tmpl"
+                  }
+                ]
+  }
+]
