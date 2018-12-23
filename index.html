@@ -17,31 +17,34 @@
 	<div class="ba-container">
 		<div class="ba-card-list">
 			<script type="text/template" id="card-tmpl">
-				<div class="ba-col-small-12 ba-col-medium-6 ba-col-large-4 ba-col-xlarge-3">
+				<div class="ba-col-small-12 ba-col-medium-6 ba-col-large-4 ba-col-xlarge-3 {{color}}" style="display: flex; justify-content: center;">
 					<div class="ba-card">
-						<div class="ba-left">
-							<div class="ba-wrap-number">
-								<div class="ba-number-up">
-									{{number}}
+						<div class="ba-card-front">
+							<div class="ba-left">
+								<div class="ba-wrap-number">
+									<div class="ba-number">
+										{{number}}
+									</div>
+									<div class="ba-number-suit">
+										{{suit}}
+									</div>
 								</div>
-								<div class="ba-number-suit">
-									{{suit}}
+							</div>
+							<div class="ba-center">
+								{{center-template}}
+							</div>
+							<div class="ba-right">
+								<div class="ba-wrap-number">
+									<div class="ba-number">
+										{{number}}
+									</div>
+									<div class="ba-number-suit">
+										{{suit}}
+									</div>
 								</div>
 							</div>
 						</div>
-						<div class="ba-center">
-							{{center-template}}
-						</div>
-						<div class="ba-right">
-							<div class="ba-wrap-number">
-								<div class="ba-number-down">
-									{{number}}
-								</div>
-								<div class="ba-number-suit">
-									{{suit}}
-								</div>
-							</div>
-						</div>
+						<div class="ba-card-back"></div>
 					</div>
 				</div>
 			</script>
@@ -54,7 +57,7 @@
 						<div class="ba-suit-img">
 							{{suit-img}}
 						</div>
-						<div class="ba-suit-img">
+						<div class="ba-suit-img ba-rotate-180">
 							{{suit-img}}
 						</div>
 					</div>
@@ -66,27 +69,198 @@
 						<div class="ba-suit-img">
 							{{suit-img}}
 						</div>
-						<div class="ba-suit-img">
+						<div class="ba-suit-img ba-rotate-180">
 							{{suit-img}}
 						</div>
 					</div>
 				</div>
 			</script>
 			<script type="text/template" id="seven-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-column">
+						<div class="ba-suit-img">
+							{{suit-img}}
+						</div>
+						<div class="ba-suit-img">
+							{{suit-img}}
+						</div>
+						<div class="ba-suit-img ba-rotate-180">
+							{{suit-img}}
+						</div>
+					</div>
+					<div class="ba-column">
+						<div class="ba-midle-midle-top">
+							{{suit-img}}
+						</div>
+					</div>
+					<div class="ba-column">
+						<div class="ba-suit-img">
+							{{suit-img}}
+						</div>
+						<div class="ba-suit-img">
+							{{suit-img}}
+						</div>
+						<div class="ba-suit-img ba-rotate-180">
+							{{suit-img}}
+						</div>
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="eight-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-column">
+						<div class="ba-height-wrap">
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+						</div>
+					</div>
+					<div class="ba-column"></div>
+					<div class="ba-column">
+						<div class="ba-height-wrap">
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+						</div>
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="nine-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-column">
+						<div class="ba-height-wrap">
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+						</div>
+					</div>
+					<div class="ba-column">
+						<div class="ba-midle-top">
+							{{suit-img}}
+						</div>
+					</div>
+					<div class="ba-column">
+						<div class="ba-height-wrap">
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+						</div>
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="ten-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-column">
+						<div class="ba-height-wrap">
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+						</div>
+					</div>
+					<div class="ba-column">
+						<div class="ba-midle-top">
+							{{suit-img}}
+						</div>
+						<div class="ba-midle-bottom ba-rotate-180">
+							{{suit-img}}
+						</div>
+					</div>
+					<div class="ba-column">
+						<div class="ba-height-wrap">
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+							<div class="ba-suit-img ba-rotate-180">
+								{{suit-img}}
+							</div>
+						</div>
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="jack-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-midle-center-text">
+						J
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="quin-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-midle-center-text">
+						Q
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="king-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-midle-center-text">
+						K
+					</div>
+				</div>
 			</script>
 			<script type="text/template" id="ace-tmpl">
+				<div class="ba-center-row">
+					<div class="ba-column">
+					</div>
+					<div class="ba-column">
+						<div class="ba-midle-center">
+							{{suit-img}}
+						</div>
+					</div>
+					<div class="ba-column">
+					</div>
+				</div>
 			</script>
 		</div>
 		<!-- /.ba-card-list -->
@@ -107,6 +281,7 @@
 			<use xlink:href="#icon-heart"></use>
 		</svg>
 	</div> -->
+	
 	<svg class="ba-hide">
 		<defs>
 			<symbol id="icon-spades" viewBox="0 0 32 32">

@@ -145,7 +145,7 @@ body, html {
 }
 /* Tablet and bigger */
 
-@media (min-width: 640px) {
+@media (min-width: 768px) {
     .ba-col-medium-12{
 		width: 100%;
 	}
@@ -225,7 +225,7 @@ body, html {
 	}
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
 	.ba-col-xlarge-12{
 		width: 100%;
 	}
